@@ -51,7 +51,7 @@ const About = () => {
                     {/* Replace with your photo */}
                     <div className="w-full h-full flex items-center justify-center text-gray-400 dark:text-gray-500 text-sm">
                       {/* Your Photo */}
-                      <img src="/public/images/Shubham_Jain_pfp-min.jpg" alt="Shubham Jain" className="w-full h-full object-cover rounded-full" />
+                      <img src="../../public/images/Shubham_Jain_pfp-min.jpg" alt="Shubham Jain" className="w-full h-full object-cover rounded-full" />
                     </div>
                   </div>
                   
