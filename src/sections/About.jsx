@@ -48,10 +48,8 @@ const About = () => {
               <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-800 rounded-xl p-6 h-full shadow-sm">
                 <div className="flex flex-col items-center">
                   <div className="w-48 h-48 bg-gray-200 dark:bg-gray-700 rounded-full mb-3 overflow-hidden">
-                    {/* Replace with your photo */}
                     <div className="w-full h-full flex items-center justify-center text-gray-400 dark:text-gray-500 text-sm">
-                      {/* Your Photo */}
-                      <img src="../../public/images/Shubham_Jain_pfp-min.jpg" alt="Shubham Jain" className="w-full h-full object-cover rounded-full" />
+                      <img src="/images/Shubham_Jain_pfp-min.jpg" alt="Shubham Jain" className="w-full h-full object-cover rounded-full" />
                     </div>
                   </div>
                   
