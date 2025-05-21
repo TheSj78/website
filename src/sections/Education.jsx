@@ -118,7 +118,7 @@ const Education = () => {
         <div className="flex items-center justify-center text-gray-500 dark:text-gray-400 mb-10">
           <span className="inline-flex items-center bg-blue-50 dark:bg-blue-900/30 px-4 py-2 rounded-full">
             <FontAwesomeIcon icon={faGraduationCap} className="mr-2 text-blue-500" />
-            <span className="font-medium">Aug 2023 – <span className="font-semibold text-gray-100">Dec 2026</span></span>
+            <span className="font-medium">Aug 2023 – <span className="font-semibold text-gray-600 dark:text-gray-100">Dec 2026</span></span>
           </span>
         </div>
 
