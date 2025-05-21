@@ -49,7 +49,7 @@ const About = () => {
                 <div className="flex flex-col items-center">
                   <div className="w-48 h-48 bg-gray-200 dark:bg-gray-700 rounded-full mb-3 overflow-hidden">
                     <div className="w-full h-full flex items-center justify-center text-gray-400 dark:text-gray-500 text-sm">
-                      <img src="/images/Shubham_Jain_pfp-min.jpg" alt="Shubham Jain" className="w-full h-full object-cover rounded-full" />
+                      <img src="/images/Shubham_Jain_pfp-min.JPG" alt="Shubham Jain" className="w-full h-full object-cover rounded-full" />
                     </div>
                   </div>
                   
