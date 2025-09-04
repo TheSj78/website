@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-  faBriefcase, 
   faCalendarAlt, 
   faMapMarkerAlt 
 } from '@fortawesome/free-solid-svg-icons';
@@ -13,7 +12,9 @@ const experiences = [
         date: 'Jun 2025 - Aug 2025',
         location: 'San Ramon, CA',
         points: [
-            'Incoming Summer 2025'
+            'Built an ML pipeline in Salesforce Data Cloud, improving Opportunity prediction accuracy from 72% to 86%',
+            'Developed Lightning Web Components and Apex classes to enhance CRM functionality for Protiviti consultants',
+            'Configured Salesforce environments; created backend integrations, streamlining sales workflows and enabling analytics.'
         ],
     },
   {
@@ -89,7 +90,7 @@ const Experience = () => {
                     {exp.points.map((point, i) => {
                       // Find numbers with % and technical terms to highlight
                       const highlightedPoint = point.replace(
-                        /(\d+%|80% accuracy|PySpark|Databricks|23%|hyperparameter tuning|cross-validation|Node\.js|Express|OAuth 2\.0|CI\/CD|98% test coverage)/g, 
+                        /(\d+%|80% accuracy|PySpark|Databricks|23%|hyperparameter tuning|cross-validation|Node\.js|Express|OAuth 2\.0|CI\/CD|98% test coverage|72% to 86%)/g, 
                         '<span class="font-semibold text-blue-700 dark:text-blue-300">$1</span>'
                       );
                       
