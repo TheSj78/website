@@ -12,8 +12,8 @@ const experiences = [
         date: 'Jun 2025 - Aug 2025',
         location: 'San Ramon, CA',
         points: [
-            'Built an ML pipeline in Salesforce Data Cloud, improving Opportunity prediction accuracy from 72% to 86%',
-            'Developed Lightning Web Components and Apex classes to enhance CRM functionality for Protiviti consultants',
+            'Built an ML pipeline in Salesforce Data Cloud, improving Opportunity prediction accuracy from 72% to 86%.',
+            'Developed Lightning Web Components and Apex classes to enhance CRM functionality for Protiviti consultants.',
             'Configured Salesforce environments; created backend integrations, streamlining sales workflows and enabling analytics.'
         ],
     },
