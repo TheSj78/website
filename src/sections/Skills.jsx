@@ -125,10 +125,13 @@ const skillGroups = [
 
 const Skills = () => {
     return (
-        <section id="skills" className="w-full min-h-screen flex items-center justify-center bg-white dark:bg-gray-900 px-6 py-16">
+        <section id="skills" className="w-full flex items-center justify-center bg-white dark:bg-gray-900 px-6 py-16">
             <div className="max-w-6xl w-full">
-                <div className="mb-8">
-                    <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-2">Skills</h2>
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                        Skills
+                    </h2>
+                    <div className="w-20 h-1 bg-blue-500 mx-auto rounded-full"></div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
