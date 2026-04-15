@@ -9,17 +9,17 @@ import {
 import { faAmazon } from '@fortawesome/free-brands-svg-icons';
 
 const experiences = [
-    {
-        title: 'Incoming Software Development Engineer Intern',
-        role: 'Incoming SDE Intern',
-        company: 'Amazon',
-        date: 'May 2026 – Aug 2026',
-        location: 'Seattle, WA',
-        points: [
-            'Incoming Software Development Engineer Intern for Summer 2026.'
-        ],
-        icon: faAmazon
-    },
+    // {
+    //     title: 'Incoming Software Development Engineer Intern',
+    //     role: 'Incoming SDE Intern',
+    //     company: 'Amazon',
+    //     date: 'May 2026 – Aug 2026',
+    //     location: 'Seattle, WA',
+    //     points: [
+    //         'Incoming Software Development Engineer Intern for Summer 2026.'
+    //     ],
+    //     icon: faAmazon
+    // },
     {
         title: 'Software Engineer Intern',
         role: 'Software Engineer Intern',
