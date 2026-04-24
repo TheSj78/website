@@ -33,7 +33,7 @@ const HeroBento = () => {
                       <img src="/images/Shubham_Jain_pfp-min.JPG" alt="Shubham Jain" className="w-full h-full object-cover" />
                     </div>
                     <h2 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-1">Shubham Jain</h2>
-                    <p className="text-blue-600 dark:text-blue-400 font-semibold mb-6 text-center text-sm tracking-wide">CS & AI @ Purdue</p>
+                    <p className="text-blue-600 dark:text-blue-400 font-semibold mb-6 text-center text-sm tracking-wide"> SDE Intern @ AWS | CS & AI @ Purdue</p>
                     
                     <div className="flex gap-4">
                         <a href="https://github.com/TheSj78" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-gray-900 hover:text-white dark:hover:bg-gray-600 transition-all">
