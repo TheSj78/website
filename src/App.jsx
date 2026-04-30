@@ -11,6 +11,18 @@ import ScrollIndicator from './components/ScrollIndicator';
 import { Analytics } from "@vercel/analytics/react";
 
 function App() {
+	useEffect(() => {
+		if (window.location.hash) {
+			const id = window.location.hash.substring(1);
+			setTimeout(() => {
+				const el = document.getElementById(id);
+				if (el) {
+					el.scrollIntoView({ behavior: 'smooth' });
+				}
+			}, 100);
+		}
+	}, []);
+
 	return (
 		<div className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen w-full">
 			<Navbar />
