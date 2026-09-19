@@ -229,6 +229,7 @@ html, body, #root {
 .file-icon--ts   { background: #1b3a5c; color: #3178c6; }
 .file-icon--json { background: #2a3a1e; color: #9ece6a; }
 .file-icon--md   { background: #2e2e3e; color: #9d7cd8; }
+.file-icon--pdf  { background: #4a1e1e; color: #f97583; }
 .file-icon--default { background: var(--bg3); color: var(--txt-dim); }
 
 /* ─── Tab Bar ────────────────────────────────────────────────────── */

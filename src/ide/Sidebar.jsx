@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { getFileIcon } from './fileUtils';
 
 const ROOT_FILES = ['README.md'];
-const SRC_FILES  = ['about.jsx', 'experience.json', 'skills.ts', 'projects.jsx', 'contact.jsx'];
+const SRC_FILES  = ['about.jsx', 'experience.json', 'skills.ts', 'projects.jsx', 'contact.jsx', 'resume.pdf'];
 
 function FolderIcon({ open }) {
   return open ? (

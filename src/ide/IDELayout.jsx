@@ -17,6 +17,7 @@ export const ALL_FILES = [
   { name: 'skills.ts',       lang: 'TS',   icon: 'ts',   section: 'src' },
   { name: 'projects.jsx',    lang: 'JSX',  icon: 'jsx',  section: 'src' },
   { name: 'contact.jsx',     lang: 'JSX',  icon: 'jsx',  section: 'src' },
+  { name: 'resume.pdf',      lang: 'PDF',  icon: 'pdf',  section: 'src' },
   { name: 'README.md',       lang: 'MD',   icon: 'md',   section: 'root' },
 ];
 
@@ -114,7 +115,7 @@ export default function IDELayout() {
             onTabClose={closeTab}
           />
           <div className="ide-content-split">
-            <EditorPane activeFile={activeTab} />
+            <EditorPane activeFile={activeTab} closeTab={closeTab} />
             {terminalOpen && <TerminalPanel onClose={() => setTerminalOpen(false)} />}
           </div>
         </div>

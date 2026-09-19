@@ -1,4 +1,5 @@
 import { getLangLabel } from './fileUtils';
+import { MOD_KEY } from './CommandPalette';
 
 export default function StatusBar({ activeFile, terminalOpen, onToggleTerminal, onOpenPalette }) {
   const lang = activeFile ? getLangLabel(activeFile.icon) : '';
@@ -23,7 +24,7 @@ export default function StatusBar({ activeFile, terminalOpen, onToggleTerminal, 
       </div>
 
       <div className="ide-statusbar-right">
-        <button className="ide-statusbar-item" onClick={onOpenPalette} title="Open Command Palette (⌘P)">
+        <button className="ide-statusbar-item" onClick={onOpenPalette} title={`Open Command Palette (${MOD_KEY}P)`}>
           shubham-jain
         </button>
         <button className="ide-statusbar-item" onClick={onToggleTerminal}>

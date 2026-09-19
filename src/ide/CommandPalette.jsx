@@ -1,6 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import { getFileIcon } from './fileUtils';
 
+// Detect OS once — shows ⌘ on Mac, Ctrl on Windows/Linux
+const isMac = typeof navigator !== 'undefined' &&
+  /Mac|iPhone|iPad|iPod/.test(navigator.platform);
+export const MOD_KEY  = isMac ? '⌘' : 'Ctrl';
+export const MOD_LABEL = isMac ? 'Cmd' : 'Ctrl';
+
 export default function CommandPalette({ files, onOpen, onClose }) {
   const [query, setQuery] = useState('');
   const [selected, setSelected] = useState(0);
@@ -52,7 +58,9 @@ export default function CommandPalette({ files, onOpen, onClose }) {
             >
               <span className="palette-item-icon">{getFileIcon(f.icon)}</span>
               <span className="palette-item-name">{f.name}</span>
-              <span className="palette-item-path">src/{f.name}</span>
+              <span className="palette-item-path">
+                {f.section === 'root' ? f.name : `src/${f.name}`}
+              </span>
             </button>
           ))}
         </div>
@@ -61,6 +69,7 @@ export default function CommandPalette({ files, onOpen, onClose }) {
           <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
           <span><kbd>↵</kbd> open</span>
           <span><kbd>esc</kbd> close</span>
+          <span style={{marginLeft:'auto'}}><kbd>{MOD_KEY}</kbd><kbd>P</kbd> toggle</span>
         </div>
       </div>
     </div>

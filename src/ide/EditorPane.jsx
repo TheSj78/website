@@ -4,6 +4,7 @@ import SkillsFile from './files/SkillsFile';
 import ProjectsFile from './files/ProjectsFile';
 import ContactFile from './files/ContactFile';
 import ReadmeFile from './files/ReadmeFile';
+import ResumeFile from './files/ResumeFile';
 import WelcomeScreen from './WelcomeScreen';
 
 const FILE_MAP = {
@@ -13,13 +14,22 @@ const FILE_MAP = {
   'projects.jsx':    ProjectsFile,
   'contact.jsx':     ContactFile,
   'README.md':       ReadmeFile,
+  'resume.pdf':      ResumeFile,
 };
 
-export default function EditorPane({ activeFile }) {
+export default function EditorPane({ activeFile, closeTab }) {
   if (!activeFile) return <WelcomeScreen />;
 
   const Component = FILE_MAP[activeFile];
   if (!Component) return <WelcomeScreen />;
+
+  const extraProps = {};
+  if (activeFile === 'resume.pdf' && closeTab) {
+    extraProps.onOpenExternal = () => {
+      closeTab('resume.pdf');
+      window.open('/resume/Shubham_Jain_Resume.pdf', '_blank', 'noopener,noreferrer');
+    };
+  }
 
   return (
     <div className="ide-editor-pane">
@@ -27,7 +37,7 @@ export default function EditorPane({ activeFile }) {
       <div className="ide-breadcrumb">
         <span className="ide-breadcrumb-seg">shubham-jain</span>
         <span className="ide-breadcrumb-sep">›</span>
-        {activeFile.includes('.jsx') || activeFile.includes('.ts') || activeFile.includes('.json')
+        {activeFile.includes('.jsx') || activeFile.includes('.ts') || activeFile.includes('.json') || activeFile.includes('.pdf')
           ? <><span className="ide-breadcrumb-seg">src</span><span className="ide-breadcrumb-sep">›</span></>
           : null
         }
@@ -36,7 +46,7 @@ export default function EditorPane({ activeFile }) {
 
       {/* Content */}
       <div className="ide-editor-scroll" data-file={activeFile}>
-        <Component />
+        <Component {...extraProps} />
       </div>
     </div>
   );
